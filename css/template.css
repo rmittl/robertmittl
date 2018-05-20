@@ -82,6 +82,10 @@ a:visited {
   justify-content: space-between;
 }
 
+.flexbox img {
+  margin-bottom: 1.4vh;
+}
+
 .box5 a:link,
 a:visited {
   color: #808080;
@@ -112,7 +116,13 @@ a:visited {
   width: 180px;
   height: 80px;
   overflow: auto;
-  margin: 0 0 0 65px;
+}
+
+.box3,
+.box4,
+.box5 {
+  margin-right: 3vw;
+  margin-bottom: 1vh;
 }
 
 .box1 {
@@ -248,4 +258,24 @@ address .nr {
 footer {
   background: #729ebf;
   height: 400px;
+}
+nav.nav {
+  margin-top: 0.7rem;
+}
+nav.nav li {
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .box1 {
+    margin: 2vh 2vw;
+  }
+  nav.nav {
+    margin: 2vw 2vh;
+  }
+
+  blockquote {
+    font-size: 1.9em;
+    padding: 2vh 0 0 10vw;
+  }
 }
