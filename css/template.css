@@ -1,9 +1,20 @@
+:root {
+  --grey: rgb(88, 88, 88);
+  --darkblue: #333a40;
+  --backgroundblue: rgb(114, 158, 191);
+}
+
 body {
   font-family: sans-serif;
   font-size: 1em;
+  color: var(--grey);
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+a,
+a:visited {
+  color: var(--darkblue);
 }
 
 .Site {
@@ -21,17 +32,19 @@ body {
   padding-left: 10px;
 }
 
-body,
-#nav a:link {
-  color: grey;
-}
-
 h1 {
   font-family: "Rokkitt", serif;
   color: white;
   font-size: 2em;
   text-align: center;
   padding-top: 140px;
+}
+.datenschutz h2,
+.impressum h2 {
+  font-family: sans-serif;
+  color: var(--grey);
+  text-align: left;
+  padding-top: 4vh;
 }
 
 .nav {
@@ -59,19 +72,7 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
-  /*position: absolute;*/
   background-color: #729ebf;
-}
-
-#nav a:link,
-a:visited {
-  font-size: 1.1em;
-  text-decoration: none;
-  position: relative;
-  padding: 40px 40px 0 20px;
-  text-align: center;
-  color: white;
-  padding-bottom: 50px;
 }
 
 .flexbox {
@@ -80,6 +81,7 @@ a:visited {
 }
 .flexbox.oben {
   justify-content: space-between;
+  padding-bottom: 3vh;
 }
 
 .flexbox img {
@@ -126,7 +128,7 @@ a:visited {
 }
 
 .box1 {
-  background-color: #333a40;
+  background-color: var(--darkblue);
   float: left;
   margin: 20px 0 0 90px;
 }
@@ -202,10 +204,10 @@ nav,
 }
 
 address {
-  padding: 20px 0 0 15px;
+  padding: 6vh 0 0 4vw;
 }
 address .org {
-  color: #ff9e00;
+  color: var(--darkblue);
   font-weight: bold;
   font-size: 150%;
 }
@@ -225,7 +227,7 @@ address .tel,
 }
 
 .email {
-  color: #ff9e00;
+  color: var(--backgroundblue);
   line-height: 2.5;
 }
 
@@ -257,7 +259,7 @@ address .nr {
 
 footer {
   background: #729ebf;
-  height: 400px;
+  height: 15vh;
 }
 nav.nav {
   margin-top: 0.7rem;
